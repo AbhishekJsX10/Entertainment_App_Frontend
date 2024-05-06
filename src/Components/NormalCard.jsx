@@ -69,14 +69,11 @@ const handelPlay = () =>{
 								alt=""
 							/>
 						
-							{/* <div className="w-full h-full rounded-xl flex items-center justify-center absolute z-10 group-hover:opacity-55">
-								No Image Preview
-							</div> */}
 						{/* Bookmark icon */}
 							<CiBookmark onClick={()=>handelBookMark()}
-								className={`absolute z-50 right-1 top-1 text-2xl p-1 rounded-full cursor-pointer md:text-3xl md:right-2 md:top-2 lg:text-4xl 
+								 className={`absolute z-50 right-1 top-1 text-2xl p-1 rounded-full cursor-pointer md:text-3xl md:right-2 md:top-2 lg:text-4xl 
 								 ${data.isBookmarked ? 'bg-[#bcbcbc] hover:bg-[#171717]' : 'bg-[#000000e4] hover:bg-[#ccc]'}`}
-							  
+								
 							/>
 						
 						{/* Play button */}
