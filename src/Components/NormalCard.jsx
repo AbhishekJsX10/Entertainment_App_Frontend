@@ -30,7 +30,7 @@ const handelBookMark = () =>{
         },1000)
 	}
 	else{
-		// console.log(data.isBookmarked=!data.isBookmarked)	
+		console.log(data.isBookmarked=!data.isBookmarked)	
 		if(data.isBookmarked === true){
 			auth.setBookmarkedData([...auth.bookmarkedData,data])
 		}

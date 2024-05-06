@@ -40,39 +40,7 @@ useEffect(() => {
             });
 
     }else{
-        // const fetchData = async () => {
         
-        //     try {
-        //         const response = await axios.get(`https://back-entertainment.onrender.com/bookmarks/all`, {
-        //             headers: {
-        //                 "Content-Type": "application/json"
-        //             },
-        //             withCredentials: true,
-        //         });
-        //         console.log(response.data.data)
-    
-        //         var tempData = response.data.data
-    
-        //         // Map over the tempData and await each axios request
-        //         const bookmarkData = await Promise.all(tempData.map(async (val) => {
-        //             if (val.itemType === "Movie") {
-        //                 const response2 = await axios.get(`https://back-entertainment.onrender.com/movies/${val.itemId}`)
-        //                 return response2.data.movie; // Return data from axios response
-        //             } else if (val.itemType === "TV Show") {
-        //                 const response2 = await axios.get(`https://back-entertainment.onrender.com/tvshow/${val.itemId}`)
-        //                 return response2.data.tvshow
-        //                 ; 
-        //             }
-        //         }));
-    
-        //         setBookmarks(bookmarkData); // Set state with resolved data
-    
-        //     } catch (error) {
-        //         console.error("Error fetching media data:", error);
-        //     }
-        // }
-        // fetchData();
-
         setBookmarks([...auth.bookmarkedData])
 
     }
@@ -108,8 +76,8 @@ theme="dark"
         <div>
             {bookmarks.length===0 ?(<BookMarkHelp text="bookmark"/>):(
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    {bookmarks.map((val)=>{
-                            return <NormalCard data={val}/>
+                    {bookmarks.map((val,index)=>{
+                            return <NormalCard key={index} data={val}/>
                     })}
                 </div>
             )}

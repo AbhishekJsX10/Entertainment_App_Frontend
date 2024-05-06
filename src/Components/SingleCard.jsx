@@ -26,7 +26,7 @@ const handelBookMark = () =>{
         },1000)
 	}
 	else{
-		// console.log(cards.isBookmarked=!cards.isBookmarked)	
+		console.log(cards.isBookmarked=!cards.isBookmarked)	
 		if(cards.isBookmarked === true){
 			auth.setBookmarkedData([...auth.bookmarkedData,cards])
 		}
