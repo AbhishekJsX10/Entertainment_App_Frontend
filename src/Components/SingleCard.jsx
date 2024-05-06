@@ -82,7 +82,9 @@ const handelPlay = () =>{
 								className="absolute z-50 right-1 top-1 bg-[#00000070] text-2xl p-1 rounded-full hover:bg-white hover:fill-black cursor-pointer md:text-3xl md:right-2 md:top-2 lg:text-4xl"
 							/>
 							<CiBookmark onClick={()=>handelBookMark()}
-								className="absolute z-50 right-1 top-1 bg-[#00000070] text-2xl p-1 rounded-full hover:bg-white hover:fill-black cursor-pointer md:text-3xl md:right-2 md:top-2 lg:text-4xl"
+								className={`absolute z-50 right-1 top-1 text-2xl p-1 rounded-full cursor-pointer md:text-3xl md:right-2 md:top-2 lg:text-4xl 
+								${data.isBookmarked ? 'bg-[#bcbcbc] hover:bg-[#171717]' : 'bg-[#000000e4] hover:bg-[#ccc]'}`}
+							   
 							/>
 						{/* Play button */}
 						<div onClick={()=>handelPlay()}
