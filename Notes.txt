@@ -1,0 +1,12 @@
+akumar
+{"itemId": "663262e59b723a50937a5c2f",
+"itemType": "Movie"}
+
+
+{"itemId": "663262fe9b723a50937a5c33"
+"itemType": "Movie"}
+
+
+{ itemId, itemType }
+
+https://entertainmentapp-backend-2ltj.onrender.com/bookmarks/all
