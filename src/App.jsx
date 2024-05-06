@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <div className='main flex flex-col md:flex-row'>
-          <Navbar2/>
+          <Navbar2 className="z-100"/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/movies" element={<Movies/>}/>

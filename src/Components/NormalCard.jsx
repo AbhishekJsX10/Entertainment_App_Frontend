@@ -59,8 +59,8 @@ const handelPlay = () =>{
   return (
     <>
     
-<div>
-    <div className="w-[95%] h-5/6 relative flex flex-col justify-between gap-2 group ml-8 sm:ml-2 md:ml-2 lg:ml-2 ">
+<div className='z-10'>
+    <div className="w-[95%] h-5/6 relative flex flex-col  justify-between gap-2 group ml-8 sm:ml-2 md:ml-2 lg:ml-2 ">
 					<div className="w-[90%] h-[12rem] relative ">
 						{/* Poster image */}
 							<img

@@ -63,8 +63,8 @@ pauseOnHover
 theme="dark"
 />
     
-    <div className='bg-transparent flex h-[4rem] md:h-[auto] justify-center  md:sticky items-start p-2 md:p-4 lg:p-4 px-4 md:px-8 lg:px-8  lg:sticky'>
-      <nav className="bg-[#364877] w-[90%] md:w-[90%] text-white  fixed z-100  flex flex-row md:flex-col md:sticky md:top-[2.5rem] md:h-[90vh] justify-between items-center p-2 md:p-4 rounded-xl my-3 md:my-0">
+    <div className='bg-transparent flex h-[4rem] md:h-[auto] justify-center z-50  md:sticky items-start p-2 md:p-4 lg:p-4 px-4 md:px-8 lg:px-8  lg:sticky'>
+      <nav className="bg-[#364877] w-[90%] md:w-[90%] text-white  fixed  flex flex-row md:flex-col md:sticky md:top-[2.5rem] md:h-[90vh] justify-between items-center p-2 md:p-4 rounded-xl my-3 md:my-0">
         {/* Logo */}
         <div className="flex items-center md:flex-col lg:flex-col">
           <MdMovie className='text-[1.5rem] text-[#FC4747]'/>
