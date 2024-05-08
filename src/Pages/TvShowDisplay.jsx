@@ -27,7 +27,7 @@ const TvShowDisplay = () => {
     
     
     const redirectToExternalWebsite = () => {
-          window.location.href = tvData.links.IMDB;
+          window.location.href = tvData.links.IMDb;
     }
     
 

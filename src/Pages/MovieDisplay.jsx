@@ -24,7 +24,7 @@ useEffect(()=>{
 
 
 const redirectToExternalWebsite = () => {
-      window.location.href = movieData.links.IMDB;
+      window.location.href = movieData.links.IMDb;
 }
 
 
